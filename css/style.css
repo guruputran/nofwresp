@@ -1,0 +1,475 @@
+/*start global*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body{
+    font-family: 'Droid Sans', sans-serif;
+  }
+
+  
+  /*start nav-bar*/
+  .nav-bar{
+    background: #333;
+  }
+  .nav-bar a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #eee;
+  }
+  .nav-bar .brand{
+    margin-top: 10px;
+  }
+  .nav-bar .menu li{
+    display: inline-block;
+    padding: 30px 10px;
+    border-bottom: 3px solid transparent;
+    transition: border .5s linear;
+  }
+  .nav-bar .menu li:hover{
+    border-bottom: 3px solid #38B1C3;
+  }
+  .nav-bar .btn{
+    margin-top: 20px; 
+  }
+  @media (max-width:767px){
+    .nav-bar .menu li{
+      display: block;
+    }
+    .nav-bar .menu.float-right{
+      float: none !important;
+    }
+  }
+  @media (min-width:767px) and (max-width:991px){
+    .nav-bar a{
+      font-size: 1.2em !important;
+    }
+  }
+  /*end nav-bar*/
+  /*start our features
+  *8-float*/
+  .features{
+    padding: 50px 0px;
+    color: #555;
+  }
+  .features h2{
+    text-transform: capitalize;
+  }
+  .features .feat{
+    margin-top: 20px;
+  }
+  @media (max-width:767px){
+    .features .h1{
+      font-size: 40px ;
+    }
+    .features .feat h2{
+      font-size: 30px;
+    }
+  }
+  @media (min-width:992px){
+    .features .feat:not(:first-of-type){
+      width: 49.5%;
+    }
+    .features .feat:first-of-type{
+      width: 100%;
+    }
+    .features .feat:nth-of-type(2){
+      margin-right:1%;
+    }
+  }
+  @media (min-width:1200px){
+    .features .feat{
+      width: 32.667% !important;
+    }
+    .features .feat:nth-of-type(2){
+      margin-left: 1%;
+    }
+  }
+  /*end our features*/
+  
+  /*start about-us
+  *11-responsive paragraph*/
+  .about-us{
+    padding: 50px 0px;
+    color: #555;
+    background: #eee;
+  }
+  .about-us .h1{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  /*end about-us*/
+  
+  /*start our-works
+  *12-responsive images*/
+  .our-works{
+    padding: 50px 0;
+    color: #555;
+  }
+  .our-works .h1{
+    margin-bottom: 20px;
+  }
+  .our-works .work{
+    line-height: 0;
+  }
+  @media (max-width:767px){
+    .our-works .work{
+      width:100%;
+    }
+  }
+  @media (min-width:768px){
+    .our-works .work{
+      width:50%;
+    }
+  }
+  @media (min-width:992px){
+    .our-works .work{
+      width: 25%;
+    }
+  }
+  /*end our-works*/
+  
+  /*start our pricing plan
+  *13- order elements*/
+  .pricing-plans{
+    color: #eee;
+    background:#333;
+    padding: 50px 0;
+  }
+  .pricing-plans .h1{
+    margin-bottom: 20px;
+  }
+  .pricing-plans .plan{
+    border: 3px solid #fff;
+    width: 32.6667%;
+    padding: 15px;
+    position: relative;
+  }
+  .pricing-plans .plan:nth-of-type(2){
+    margin: 0px 1%;
+  }
+  .pricing-plans span{
+    width:70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #000;
+    margin: 10px 0;
+    background: #eee;
+    display: inline-block;
+  }
+  .pricing-plans h3{
+    letter-spacing:3px;
+    text-transform: uppercase;
+  }
+  @media (max-width:767px){
+    .pricing-plans .plan{
+      float: none;
+      width: 100%;
+      margin: 10px 0px !important;
+    }
+  }
+  @media (min-width:768px){
+    .pricing-plans .plan:first-of-type{
+      left:67.3333%;                 
+    }
+    .pricing-plans .plan:nth-of-type(3){
+      right:67.3333%;
+    }
+  }
+  /*end our pricing plan*/
+  
+  /*start what thay say about us*/
+  .testmonial{
+    padding: 50px 0;
+    color: #555;
+  }
+  .testmonial .person{
+    margin-top: 25px;
+    background: #333;
+    color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    width: 49%;
+  }
+  .testmonial .person:first-of-type{
+    margin-left: 26%;
+  }
+  .testmonial .person:nth-of-type(3){
+    margin-left: 2%;
+  }
+  .testmonial .person .image{
+    width: 120px;
+    margin-right: 20px;
+  }
+  .testmonial .person .image img{
+    padding: 2px;
+    background: #fff;
+    border: 1px solid #7f8c8d;
+  }
+  .testmonial .person p{
+    width: calc(100% - 140px);
+    line-height: 1.6;
+    font-size: 1.2em;
+  }
+  @media (max-width:767px){
+    .testmonial .person{
+      width: 100% !important;
+      margin: 10px 0px !important;
+      text-align: center;
+    }
+    .testmonial .person p{
+      width: 100%;
+    }
+    .testmonial .person .image{
+      margin: auto;
+    }
+    .testmonial .float-left{
+      float: none !important;
+    }
+  }
+  @media (min-width:768px) and (max-width:991px){
+    .testmonial .person{
+      width: 100% !important;
+      margin: 10px 0px !important;
+      text-align: center;
+    }
+    .testmonial .person p{
+      width: 100%;
+    }
+    .testmonial .person .image{
+      margin: auto;
+    }
+    .testmonial .float-left{
+      float: none !important;
+    }
+  }
+  /*end what thay say about us*/
+  
+  /*start dynamic tab*/
+  .product-information{
+    padding: 50px 0;
+    background: #eee;
+    color: #555;
+  }
+  .product-information .h1{
+    margin-bottom: 20px;
+  }
+  .product-information .classic-list li{
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 15px;
+    user-select:none;
+    background: #ddd;
+    cursor: pointer;
+  }
+  .active{
+    color: #38B1C3;
+    background: #fff !important;
+  }
+  .product-information .content{
+    background: #fff;
+    padding: 30px 15px;
+  }
+  .product-information .content:not(:first-of-type){
+    display: none;
+  }
+  @media (max-width:767px){
+    .product-information .classic-list li{
+      display: block;
+    }
+  }
+  /*end dynamic tab*/
+  
+  /*start footer*/
+  .footer{
+    padding: 20px 0;
+    color: #eee;
+    background: #333;
+  }
+  .footer p{
+    width: 50%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  @media (max-width:767px){
+    .footer p{
+      float: none;
+      width: 100%;
+      padding: 5px;
+    }
+  }
+  /*end footer*/
+  /*start media query*/
+  /*mobile-xs*/
+  @media (max-width:767px){
+    .responsive-p{
+      font-size:18px !important;
+      line-height: 1.4;
+    }
+    .visible-xs{
+      display: block !important;
+    }
+    .hidden-xs{
+      display: none !important;
+    }
+    .responsive-p{
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+  /*tablet-sm*/
+  @media (min-width:768px){
+    .container{
+      width:750px;
+    }
+    .visible-sm{
+      display: block !important;
+    }
+    .hidden-sm{
+      display: none !important;
+    }
+  }
+  /*meduim-md*/
+  @media (min-width:992px){
+    .container{
+      width:970px;
+    }
+    .visible-md{
+      display: block !important;
+    }
+    .hidden-md{
+      display: none !important;
+    }
+  
+  }
+  /*large-lg*/
+  @media (min-width:1200px){
+    .container{
+      width:1170px;
+    }
+    .visible-lg{
+      display: block !important;
+    }
+    .hidden-lg{
+      display: none !important;
+    }
+  }
+  /*end media query*/
+  
+  /*start my-framework*/
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .float-left{
+    float:left;
+  }
+  .float-right{
+    float: right
+  }
+  /**clearFix HACK
+  *source="http://nicolasgallagher.com/micro-clearfix-hack/"
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    contenteditable attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that are clearfixed.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+  .clearFix:before,
+  .clearFix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  
+  .clearFix:after {
+    clear: both;
+  }
+  
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+  .clearFix {
+    *zoom: 1;
+  }
+  
+  .responsive-img{
+    width: 100%;
+  }
+  .h1{
+    font-size: 50px;
+  }
+  .responsive-p{
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .visible-xs,
+  .visible-sm,
+  .visible-md,
+  .visible-lg{
+    display: none;
+  }
+  .classic-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .btn{
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+  }
+  .btn:hover{
+    opacity: .7;
+    cursor: pointer;
+  }
+  .btn-primary{
+    color: #fff;
+    background: #2ecc71;
+  }
+  .btn-danger{
+    color: #fff;
+    background: #e74c3c;
+  }
+  .btn-info{
+    color: #fff;
+    background: #3498db;}
+  .circle-img{
+    border-radius: 50%;
+  }
+  .thumbnail{
+    padding: 3px;
+    border-radius: 5px;
+    background: #fff;
+    border: 2px solid #7f8c8d
+  }
+  /*
+  *col-1{width:100%}
+  *col-2{width:50%}
+  *col-3{width:33.33333%}
+  *col-4{width:25%}
+  *col-5{width:20%}
+  *col-6{width:16.6667%}
+  *col-7{width:14.286%}
+  *col-8{width:12.5%}
+  *col-9{width:11.1111%}
+  *col-10{width:10%}
+  *col-11{width:9090%}
+  *col-12{width:8.3333%}*/
+  /*end my-framework*/
